@@ -2,8 +2,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,600&display=swap');
 
 * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
     font-family: 'Dancing Script', cursive;
 font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.Profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: black;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: red;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profile-image {
+height: 100%;
+width: 100%;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid;
+border-color: aliceblue;
+
+}
+
+.Profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.text-data .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job
+{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.Profile-card .media-buttons{
+  
+  display: flex;
+  align-items: center;
+  margin-top: 4%;
+  
+
 
 
 }
+
+.Profile-card ::after {
+    
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: red;
+
+
+
+}
+
+.media-buttons .link {
+
+height: 34px;
+width: 34px;
+display: flex;
+border-radius: 50%;
+margin: 0 8px;
+justify-content: center;
+text-decoration: none;
+color: white;
+font-size: 18px;
+align-items: center;
+
+
+}
+.Profile-card .Buttons {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+}
+.Buttons .button {
+    margin: 0 10px;
+   padding: 8px 24px;
+   background: rgb(255, 0, 0);
+   border-radius: 50px;
+   
+}
+
+.analytics .data{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-right: 2px solid rgb(116, 116, 116);
+    
+}
+.data:last-child {
+    border-right: none;
+}
+
+
+.Profile-card .analytics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+
+    
